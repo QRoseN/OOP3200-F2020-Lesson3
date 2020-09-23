@@ -4,6 +4,8 @@
 
 #endif /*DEFINED (__CARTESIAN_POINT__)*/
 
+#include <string>
+
 // class declaration section
 class CartesianPoint
 {
@@ -16,6 +18,10 @@ public:
 	*	- should set values for each member variable
 	*/
 	CartesianPoint(int x = 1, int y = 1);
+	~CartesianPoint();
+
+	/*operator overloads*/
+	double operator-(const CartesianPoint& point_to) const;
 
 	// --------------------------------------------------------------------------------
 	/* Accessors: Used to query the state of the object
@@ -23,6 +29,7 @@ public:
 	*	- should specify const at the end of the prototype/header
 	*/
 
+	/****************************************************************************/
 	// get x
 	int GetX();
 
