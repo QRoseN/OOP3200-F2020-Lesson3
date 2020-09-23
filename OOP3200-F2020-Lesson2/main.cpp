@@ -54,6 +54,12 @@ int main()
 		//distance = origin.GetDistanceTo(destination);
 		distance = origin - destination;
 
+		cout << "origin is equal to destination?: " << to_string(origin == destination) << endl;
+
+		CartesianPoint newPoint = origin + destination;
+
+		cout << "origin plust destination = " << newPoint.ToString() << endl;
+
 		// Output 
 		// Show the points and the distance
 		cout << fixed << setprecision(3); // formatting
